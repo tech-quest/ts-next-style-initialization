@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './styles.module.css';
 
 type Props = {
@@ -12,14 +13,14 @@ export const DefaultLayout = ({ children }: Props) => {
         <nav>
           <ul className={styles.menu}>
             <li>
-              <a href="#" className={styles.link}>
+              <Link href="#" className={styles.link}>
                 メニュー1
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className={styles.link}>
+              <Link href="#" className={styles.link}>
                 メニュー2
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
